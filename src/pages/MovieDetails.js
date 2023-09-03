@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   return (
     <>
       <p>MovieDetails</p>
@@ -15,3 +15,5 @@ export const MovieDetails = () => {
     </>
   );
 };
+
+export default MovieDetails;
