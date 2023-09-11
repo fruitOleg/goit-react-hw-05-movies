@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, NavLink  } from 'react-router-dom';
 import { Loader } from './Loader.js';
+import { Nav } from './Nav.styled.js';
 
 const Homepage = lazy(() => import('../pages/Homepage'));
 const MovieDetailsPage = lazy(() => import('../pages/MovieDetailsPage'));
@@ -11,16 +12,16 @@ const Reviews = lazy(() => import('./Reviews'));
 export const App = () => {
    return (
       <>
-      <nav>
+      <Nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/movies">Movies</Link>
+            <NavLink to="/movies">Movies</NavLink>
           </li>
         </ul>
-      </nav>
+      </Nav>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Homepage />} />
