@@ -8,7 +8,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/goit-react-hw-05-movies">
       <App />
-      <footer> ©2024 Created by Kostyiantyn Kudriashov </footer>
       <GlobalStyle />
     </BrowserRouter>
   </React.StrictMode>

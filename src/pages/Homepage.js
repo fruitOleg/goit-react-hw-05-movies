@@ -1,6 +1,7 @@
 import { fetchHomepage } from 'components/api';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { GlobalStyle } from 'components/GlobalStyle';
 
 const Homepage = () => {
   const [movies, setMovies] = useState([]);
@@ -28,7 +29,10 @@ const Homepage = () => {
           </li>
         ))}
       </ul>
+      <footer> ©2024 Created by Kostyiantyn Kudriashov </footer>
+      <GlobalStyle />
     </div>
+    
   );
 };
 export default Homepage;
