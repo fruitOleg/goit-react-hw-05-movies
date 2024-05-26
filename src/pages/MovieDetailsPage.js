@@ -4,7 +4,7 @@ import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { Loader } from 'components/Loader';
 
 const MovieDetailsPage = () => {
-  const date = new Date();
+  // const date = new Date();
   const [singleMovie, setSingleMovie] = useState(null);
   const { movieId } = useParams();
   const location = useLocation();
