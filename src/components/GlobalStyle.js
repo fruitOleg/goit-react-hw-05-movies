@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 body {
   html {
+
   box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
@@ -30,6 +31,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+footer{
+  margin-top: 10%;
+}
 }
 `;
